@@ -1,0 +1,22 @@
+Implementarea jocului a durat in jur de 15 ore
+
+Am realizat toate cele 5 cerinte
+
+In main apelez functia meniu_principal. Functia meniu_principal imi 
+genereaza meniul care are 3 optiuni: New game, Resume, Quit. Daca selectez
+New Game, incepe un joc nou in care generez 2 numere aleatorii pe 2 pozitii 
+aleatorii, daca apas sageata in jos programul realizeaza o mutare in jos,
+daca apas sageata in sus programul realizeaza o mutare in sus, daca apas 
+sageata dreapta programul realizeaza o mutare in dreapta, iar daca apas
+sageata stanga programul realizeaza o mutare in stanga. Am o functie care
+verifica tot timpul daca jocul s-a pierdut(verific cu ajutorul unor copii
+care simuleaza mutarile si dupa verific daca mutarile simulate sunt identice
+cu cea initiala). Verific cu ajutorul unei functii daca jocul s-a castigat
+(daca am gasit valoarea 2048). Cu ajutorul unor variabile care retin timpul
+ultimului input, odata la 30 de secunde de la realizarea ultimei comenzi
+se realizeaza o mutare automata(cea mai eficienta din punct de vedere al
+spatiilor ramase libere). Daca apas "q" programul pune jocul pe pauza 
+si apeleaza functia meniu_principal care creaza meniul principal.
+In acest moment daca dau Resume jocul porneste de unde a fost pus pe pauza.
+Daca dau new_game, matricea care retinea valorile din tabela se 
+reinitilizeaza cu 0 si incepe un joc nou.
