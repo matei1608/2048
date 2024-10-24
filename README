@@ -1,6 +1,10 @@
 Creator: Matei-Cristian Lazarescu
 The implementation of the game took about 15 hours.
 
+To start the game, you need to open a new linux terminal inside the directory
+and write the commands: "make", and "make run". The Game Menu will appear.
+
+How I implemented the Game:
 
 In the main function, I call the meniu_principal function. This function 
 generates a menu with three options: New Game, Resume, and Quit. 
