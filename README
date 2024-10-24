@@ -1,22 +1,24 @@
-Implementarea jocului a durat in jur de 15 ore
+Creator: Matei-Cristian Lazarescu
+The implementation of the game took about 15 hours.
 
-Am realizat toate cele 5 cerinte
 
-In main apelez functia meniu_principal. Functia meniu_principal imi 
-genereaza meniul care are 3 optiuni: New game, Resume, Quit. Daca selectez
-New Game, incepe un joc nou in care generez 2 numere aleatorii pe 2 pozitii 
-aleatorii, daca apas sageata in jos programul realizeaza o mutare in jos,
-daca apas sageata in sus programul realizeaza o mutare in sus, daca apas 
-sageata dreapta programul realizeaza o mutare in dreapta, iar daca apas
-sageata stanga programul realizeaza o mutare in stanga. Am o functie care
-verifica tot timpul daca jocul s-a pierdut(verific cu ajutorul unor copii
-care simuleaza mutarile si dupa verific daca mutarile simulate sunt identice
-cu cea initiala). Verific cu ajutorul unei functii daca jocul s-a castigat
-(daca am gasit valoarea 2048). Cu ajutorul unor variabile care retin timpul
-ultimului input, odata la 30 de secunde de la realizarea ultimei comenzi
-se realizeaza o mutare automata(cea mai eficienta din punct de vedere al
-spatiilor ramase libere). Daca apas "q" programul pune jocul pe pauza 
-si apeleaza functia meniu_principal care creaza meniul principal.
-In acest moment daca dau Resume jocul porneste de unde a fost pus pe pauza.
-Daca dau new_game, matricea care retinea valorile din tabela se 
-reinitilizeaza cu 0 si incepe un joc nou.
+In the main function, I call the meniu_principal function. This function 
+generates a menu with three options: New Game, Resume, and Quit. 
+If I select New Game, a new game starts, during which I generate two random 
+numbers at two random positions. If I press the down arrow, the program 
+makes a move downwards; if I press the up arrow, the program moves upwards; 
+if I press the right arrow, the program moves to the right; 
+and if I press the left arrow, the program moves to the left.
+
+I have a function that continuously checks if the game has been lost 
+(I verify this using copies that simulate the moves and then check if the 
+simulated moves are identical to the initial state). I also have a function 
+that checks if the game has been won (if the value 2048 has been achieved).
+
+Using variables that keep track of the last input time, an automatic move 
+occurs every 30 seconds after the last command (the most efficient move 
+considering the remaining free spaces). If I press "q", the program pauses 
+the game and calls the meniu_principal function, which creates the main menu. 
+At this point, if I select Resume, the game starts from where it was paused. 
+If I select New Game, the matrix that holds the values from the board is 
+reinitialized to 0, and a new game begins.
